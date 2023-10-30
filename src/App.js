@@ -11,18 +11,10 @@ function App() {
       <Router>
         <Header/>
         <Switch>
-          <Route path="/home">
-            <Home />
-          </Route>
-          <Route path="/login">
-            <Login />
-          </Route>
-          <Route path="/book/:bedType">
-            <Book />
-          </Route>
-          <Route exact path="/">
-            <Home />
-          </Route>
+          <Route path="/home"><Home /></Route>
+          <Route path="/login"><Login /></Route>
+          <Route path="/book/:bedType"><Book /></Route>
+          <Route exact path="/"><Home /></Route>
         </Switch>
       </Router>
   );
